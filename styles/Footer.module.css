@@ -1,0 +1,67 @@
+.container {
+    height: 250px;
+    border-top: 30px solid #66fcf1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 50px;
+    background: #0b0c10;
+    color: lightgray;
+    margin-top: 10rem;
+}
+
+.title {
+    font-weight: 400;
+    color: white;
+    /* background: #0BDA51; */
+    padding: 5px;
+    width: max-content;
+    color: #66fcf1;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.titleArrow {
+    margin-left: 10px;
+    transition: all .4s ease;
+}
+
+.linkTitle:hover {
+    transition: all .4s ease;
+}
+
+.linkTitle:hover .titleArrow {
+    margin-left: 20px;
+}
+
+.cardL {
+    flex: 2;
+}
+
+.cardS {
+    flex: 1;
+    align-self: stretch;
+}
+
+.cardItem {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .title, .linkTitle {
+        font-size: 30px;
+    }
+
+    .cardItem {
+        text-align: center;
+    }
+}
